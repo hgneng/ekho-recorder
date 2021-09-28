@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebSpeech Demo 5</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+<button onclick='WebSpeech.srStart();'>Start Speech Recognition</button>
+<button onclick='WebSpeech.srStop();'>Stop Speech Recognition</button>
+<div id='result'></div>
+<script src='jquery-3.6.0.min.js'></script>
+<script type='text/javascript' src='WebSpeech/WebSpeech.js'></script>
+<script>
+  WebSpeech.srSpeechRecognized = function(result) {
+    $('#result').html($('#result').html() + '<p>' + result + '</p>');
+  }
+</script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+{
+  "name": "Ekho Recorder",
+  "productName": "Ekho录音机",
+  "copyright": "Copyright ©2021 黄冠能",
+  "version": "1.0.0",
+  "description": "A tool to record voice for Ekho TTS",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --linux snap"
+  },
+  "keywords": [
+    "electron",
+    "Ekho",
+    "text-to-speech",
+    "TTS",
+    "recorder"
+  ],
+  "author": "Cameron Wong",
+  "devDependencies": {
+    "electron": "^7.1.1",
+    "electron-builder": "^22.1.0"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "http": "^0.0.0",
+    "ncp": "^2.0.0",
+    "os": "^0.1.1",
+    "rmdir-recursive": "^0.0.1",
+    "unzipper": "^0.10.5",
+    "utf8": "^3.0.0"
+  },
+  "buildResources": "build",
+  "output": "dist",
+  "app": "app",
+  "build": {
+    "asar": false
+  }
+}
